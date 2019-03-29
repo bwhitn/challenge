@@ -22,8 +22,8 @@ function hover() {
     }
 }
 function arrRand(arr) {
-    var it = Math.floor(Math.random() * (arr.length + 1));
-    return (it < 1) ? arr[it + 1] : arr[it];
+    var it = Math.floor(Math.random() * (arr.length));
+    return arr[it];
 }
 function randBackground() {
     document.body.style.backgroundColor = arrRand(colors);
